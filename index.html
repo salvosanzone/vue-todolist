@@ -12,8 +12,15 @@
   
   <div id="app">
     <h1>to do list</h1>
-    <input placeholder="Cose da fare" type="text">
-    <button>Aggiungi</button>
+    <!--collego con v-model l'input alla sua variabile-->
+    <input 
+      v-model="itemByInput" 
+      @keyup.enter="pushNewItem"
+      placeholder="Cose da fare" type="text">
+      
+    <button
+      @click="pushNewItem"
+    >Aggiungi</button>
     <ul>
       <!--stampo la lista ogetti-->
       <li v-for="item in toDoList">

@@ -29,6 +29,7 @@ const app = new Vue({
 
   data: {
 
+    //array di oggetti con due proprietà
     toDoList: [
       {
         text: 'Fare la spesa',
@@ -45,9 +46,9 @@ const app = new Vue({
         done: 'true',
 
       },
-    ]
-
-
+    ],
+    //creo una variabile vuota da collegare all'input
+    itemByInput: '',
 
 
    
@@ -56,6 +57,11 @@ const app = new Vue({
 
 
   methods: {
+
+    //creo una funzione che, tramite una key-up pusha cio che ho scritto nell'input direttamente alla toDoList
+    pushNewItem(){
+      this.toDoList.push(this.itemByInput)
+    }
 
   }
 
