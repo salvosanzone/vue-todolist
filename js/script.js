@@ -33,17 +33,17 @@ const app = new Vue({
     toDoList: [
       {
         text: 'Fare la spesa',
-        done: 'true',
+        done: true,
 
       },
       {
         text: 'Ricordato di studiare',
-        done: 'true',
+        done: true,
 
       },
       {
         text: 'Chiamare a fabio',
-        done: 'true',
+        done: true,
 
       },
     ],
@@ -59,10 +59,16 @@ const app = new Vue({
   methods: {
 
     //creo una funzione che, tramite una key-up pusha cio che ho scritto nell'input direttamente alla toDoList
-    pushNewItem(){
-      this.toDoList.push(this.itemByInput)
-    }
+    pushNewItem(){this.toDoList.push({
+        text:this.itemByInput,
+        done:false
+      })
+    },
 
+    //creo una funzione che al click eliminerà dall'array un elemento
+    deleteItem(){
+      
+    }
   }
 
 });

@@ -25,7 +25,9 @@
       <!--stampo la lista ogetti-->
       <li v-for="item in toDoList">
         <p>{{item.text}}</p>
-        <i class="fas fa-trash"></i>
+        <i 
+        @click="deleteItem"
+        class="fas fa-trash"></i>
       </li>
     </ul>
 
