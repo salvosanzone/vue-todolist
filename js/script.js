@@ -50,9 +50,6 @@ const app = new Vue({
     //creo una variabile vuota da collegare all'input
     itemByInput: '',
 
-
-   
-
   },
 
 
@@ -63,6 +60,8 @@ const app = new Vue({
         text:this.itemByInput,
         done:false
       })
+      //resetto il v-model
+      this.itemByInput = '';
     },
 
     //creo una funzione che al click eliminerà dall'array un elemento
