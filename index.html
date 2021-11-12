@@ -23,7 +23,7 @@
     >Aggiungi</button>
     <ul>
       <!--stampo la lista ogetti-->
-      <li v-for="item in toDoList">
+      <li v-for="(item, index) in toDoList">
         <p>{{item.text}}</p>
         <i 
         @click="deleteItem"

@@ -66,8 +66,8 @@ const app = new Vue({
     },
 
     //creo una funzione che al click eliminerà dall'array un elemento
-    deleteItem(){
-      
+    deleteItem(index){
+      this.toDoList.splice(index,1)
     }
   }
 
