@@ -28,11 +28,30 @@ const app = new Vue({
   el: '#app',
 
   data: {
-    todoList: [
-      'fare la spesa',
-      'comprare la frutta',
-      'comprare la carne'
+
+    toDoList: [
+      {
+        text: 'Fare la spesa',
+        done: 'true',
+
+      },
+      {
+        text: 'Ricordato di studiare',
+        done: 'true',
+
+      },
+      {
+        text: 'Chiamare a fabio',
+        done: 'true',
+
+      },
     ]
+
+
+
+
+   
+
   },
 
 
