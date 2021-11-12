@@ -1,0 +1,39 @@
+#app{
+  display: flex;
+  justify-content: center;
+}
+input{
+  width: 500px;
+  margin-bottom: 20px;
+  background-color: rgb(253, 253, 253);
+  transition: .5s;
+  border-radius: 5px;
+  
+}
+input:hover{
+  background-color: white;
+}
+
+button{
+  padding: 1px 80px;
+  background-color: rgb(253, 253, 253);
+  border-radius: 5px;
+}
+
+li{
+  padding: 0 50px 0 50px;
+  list-style: none;
+}
+ul{
+  display: flex;
+  justify-content: space-around;
+}
+i{
+  cursor: pointer;
+  color: lightgrey;
+}
+
+i:hover{
+  color: black;
+}
+
